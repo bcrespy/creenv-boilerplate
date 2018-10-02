@@ -1,0 +1,27 @@
+{
+  "name": "creenv-boilerplate",
+  "version": "0.0.1",
+  "description": "The boilerplate environment installed by creenv-create",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcrespy/creenv-boilerplate.git"
+  },
+  "keywords": [
+    "creenv",
+    "boilerplate",
+    "creative",
+    "environment",
+    "es6",
+    "modern"
+  ],
+  "author": "Baptiste Crespy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bcrespy/creenv-boilerplate/issues"
+  },
+  "homepage": "https://github.com/bcrespy/creenv-boilerplate#readme"
+}
