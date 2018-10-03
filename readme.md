@@ -25,6 +25,8 @@ Usually, the Creenv modules are well-documented. If you need one of them (which 
 - stats - display informations about stats 
 - gui-controls - easy to use and customizable controls 
 - file-loader - a file loader to dynamically load files into your app 
+- vector - vector operations 
+- 
 
 ### Publish your work 
 
@@ -38,5 +40,4 @@ This command will build your code into the /dist folder. To publish your work on
 
 ## 2. Code structure 
 
-There is one main thing you need to know: you have to create a class that extends the **Creenv** class from the *@creenv/core*. Once done, their are 2 main method you have to inherit: the init(), to initialize the required data, and the render() method, which will be called on each frame.
-
+There is one main thing you need to know: you have to create a class that extends the **Creenv** class from the *@creenv/core*. Once done, their are 2 main method you have to inherit: the init(), to initialize the required data, and the render() method, which will be called on each frame. There is already an existing example running in the boilerplate.
