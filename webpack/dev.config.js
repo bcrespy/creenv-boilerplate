@@ -1,11 +1,9 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin');
 
 
-module.exports = 
-{
+module.exports = {
 
   mode: 'development',
   
@@ -13,9 +11,8 @@ module.exports =
 
   output: 
   {
-    path: path.resolve(__dirname, '../dist'),
-    filename: `app.js`,
-    publicPath: "/dist/"
+    path: path.resolve(__dirname, 'dist'),
+    filename: `bundle.js`,
   },
   
   devtool: "cheap-module-eval-source-map",
@@ -50,6 +47,10 @@ module.exports =
             attrs: false
           }
         }
+      }, 
+      {
+        test: /\.(png|svg|jpg|jpeg|gif|obj)$/,
+        use: [ "file-loader" ]
       }
     ]
   },
@@ -65,10 +66,8 @@ module.exports =
 
   plugins: [
     new HtmlWebpackPlugin({
-      alwaysWriteToDisk: true,
       template: "./public/index.html"
-    }),
-    new HtmlWebpackHarddiskPlugin()
+    })
   ],
 
   resolve: 

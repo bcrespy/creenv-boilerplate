@@ -1,5 +1,10 @@
 import { Creenv } from '@creenv/core';
 import Canvas from '@creenv/canvas';
+import test from './image.jpeg';
+
+let toto = new Image();
+toto.onload = () => { document.body.appendChild(toto) }
+toto.src = test;
 
 
 class MyProject extends Creenv {
