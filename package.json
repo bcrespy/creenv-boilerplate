@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --config webpack/dev.config.js",
-    "build": "webpack --config webpack/prod.config.js -p --progress"
+    "build": "webpack --config webpack/prod.config.js -p --progress",
+    "update-creenv": "npm uninstall --save @creenv/core @creenv/canvas @creenv/color && npm install --save @creenv/core @creenv/canvas @creenv/color"
   },
   "repository": {
     "type": "git",
@@ -45,7 +46,7 @@
   },
   "dependencies": {
     "@creenv/canvas": "0.0.2",
-    "@creenv/color": "^0.3.0",
-    "@creenv/core": "0.0.2"
+    "@creenv/color": "^0.3.1",
+    "@creenv/core": "^0.1.1"
   }
 }
