@@ -8,7 +8,7 @@ let config = {
   translation: 15,
 
   // the background color 
-  backgroundColor: "rgba(255,0,255,1)",
+  backgroundColor: "#D1FFC5",
 
   // weither or not we draw the text 
   drawText: true,
