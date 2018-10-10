@@ -13,6 +13,12 @@
 
 import Creenv from '@creenv/core';
 import Canvas from '@creenv/canvas';
+import GUI from '@creenv/gui';
+
+// config + user controls 
+import config from './config';
+import '@creenv/gui/lib/gui-style.css';
+import controls from './user-controls';
 
 /**
  * For the sake of the example, the rendering logic will take part 
@@ -21,6 +27,8 @@ import Canvas from '@creenv/canvas';
  * identifying mistakes and improving your app easier :)
  */
 import Renderer from './renderer';
+
+
 
 
 /**
@@ -40,6 +48,8 @@ class MyProject extends Creenv {
 
     // optional, it just show that you can set the framerate like that
     super.framerate(60);
+
+    this.gui = new GUI(controls);
 
     // for the example
     this.renderer = new Renderer();
