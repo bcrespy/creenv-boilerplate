@@ -2,13 +2,14 @@
  * This config object will have its properties controlled by the user
  * interface 
  */
+import Color from '@creenv/color';
 
 let config = {
   // the x translation of the cube 
   translation: 15,
 
   // the background color 
-  backgroundColor: "#D1FFC5",
+  backgroundColor: new Color(220, 0, 150),
 
   // weither or not we draw the text 
   drawText: true,

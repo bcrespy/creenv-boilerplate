@@ -20,8 +20,7 @@ class Renderer {
 
   render (time) {
     this.canvas.fillStyle(this.cubeColor.rgb);
-
-    this.canvas.background(config.backgroundColor);
+    this.canvas.background(config.backgroundColor.rgba);
     let translationY = Math.abs(Math.cos(time/1000)) * BOUNCING_HEIGHT;
     this.canvas.rect(this.canvas.width/2-CUBE_SIZE/2 + config.translation, this.canvas.height/2-CUBE_SIZE/2-translationY, CUBE_SIZE, CUBE_SIZE);
 
