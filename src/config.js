@@ -9,7 +9,7 @@ let config = {
   translation: 15,
 
   // the background color 
-  backgroundColor: new Color(220, 0, 150),
+  backgroundColor: new Color(122, 251, 199),
 
   // weither or not we draw the text 
   drawText: true,

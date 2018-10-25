@@ -19,13 +19,15 @@ class Renderer {
   }
 
   render (time) {
-    this.canvas.fillStyle(this.cubeColor.rgb);
-    this.canvas.background(config.backgroundColor.rgba);
+    this.canvas.fillStyle(this.cubeColor.string);
+    this.canvas.background(config.backgroundColor.string);
     let translationY = Math.abs(Math.cos(time/1000)) * BOUNCING_HEIGHT;
     this.canvas.rect(this.canvas.width/2-CUBE_SIZE/2 + config.translation, this.canvas.height/2-CUBE_SIZE/2-translationY, CUBE_SIZE, CUBE_SIZE);
 
-    if (config.drawText)
+    if (config.drawText) {
+      this.canvas.context.font = "27px Arial";
       this.canvas.context.fillText(config.text, this.canvas.width/2-CUBE_SIZE/2 + config.translation, this.canvas.height/2-CUBE_SIZE/2-translationY)
+    }
   }
 }
 

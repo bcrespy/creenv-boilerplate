@@ -1,13 +1,14 @@
 /**
- * This really simple project show you how you can use Creenv to create 
- * creative applications. It focuses on the core of Creenv to show you how 
- * simple it is to work with Creenv. However, this project only covers a 
- * small part of all the things you can do with Creenv. I strongly encourage 
- * that you take a look at all the examples provided here 
+ * This is the demonstration project, it is installed when running the command 
+ * create-creenv --mode demo
  * 
- * [needs_to_be_added]
+ * Hello. Welcome to the creative environment This project showcases the functionnalities of creenv and can be used as a good
+ * starting point for learning creenv. However, it is still recommended that you take at look at the Learning Table, a central
+ * document where all the basic informations about creenv can be found. 
  * 
- * Cochon farci, fromage, et pomme de pin
+ * <insert_link_to_learning_table_here>
+ * 
+ * 
  */
 
 
@@ -17,7 +18,6 @@ import GUI from '@creenv/gui';
 
 // config + user controls 
 import config from './config';
-import '@creenv/gui/lib/gui-style.css';
 import controls from './user-controls';
 
 /**
@@ -27,7 +27,6 @@ import controls from './user-controls';
  * identifying mistakes and improving your app easier :)
  */
 import Renderer from './renderer';
-
 
 
 
