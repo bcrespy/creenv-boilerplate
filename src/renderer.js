@@ -11,12 +11,15 @@ const TRANSLATION = 400,
       CUBE_SIZE = 250;
 
 class Renderer {
+  
+  // called before the first render() call 
   init () {
     this.canvas = new Canvas();
     this.backgroundColor = new Color(0,255,0);
     this.cubeColor = new Color(255,0,255);
   }
 
+  // called each frame 
   render (time) {
     this.canvas.fillStyle(this.cubeColor.rgb);
 
